@@ -1,0 +1,20 @@
+streamlit
+scikit-learn
+spacy
+nltk
+cryptography
+schedule
+pandas
+numpy
+plotly
+PyPDF2
+SpeechRecognition
+beautifulsoup4
+requests
+altair
+google-generativeai
+python-dotenv
+# en_core_web_sm will need to be downloaded separately via python -m spacy download en_core_web_sm
+langchain
+pymupdf
+faiss-cpu
