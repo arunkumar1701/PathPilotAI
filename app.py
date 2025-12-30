@@ -77,20 +77,21 @@ def login_page():
     
     col1, col2, col3 = st.columns([1,2,1])
     with col2:
+        st.info("ℹ️ **Prototype Credentials**\n\nUsername: `arunkumar`\nPassword: `Qwertyui`")
         with st.form("login_form"):
             st.write("Please sign in to continue")
-            username = st.text_input("Username / Email")
+            username = st.text_input("Username")
             password = st.text_input("Password", type="password")
             submit = st.form_submit_button("Login")
             
             if submit:
                 # Simple mock auth
-                if username: 
+                if username == "arunkumar" and password == "Qwertyui": 
                     st.session_state.logged_in = True
                     st.session_state.username = username
                     st.rerun()
                 else:
-                    st.error("Please enter a username.")
+                    st.error("Invalid credentials. Please use the prototype usage credentials.")
 
 if not st.session_state.logged_in:
     login_page()
