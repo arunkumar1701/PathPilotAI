@@ -50,7 +50,7 @@ with st.sidebar:
     st.markdown("### System Status")
     
     # Default key for demo purposes
-    default_key = "AIzaSyDlPeb49DSYZNShcBC4r7Qz6Fk_-YFuJYM"
+    default_key = "AIzaSyBPr5kP5XH04v6f67EU3gUMZNCpxpSL1uw"
     api_key = st.text_input("Gemini API Key", value=default_key, type="password")
     
     if api_key:
